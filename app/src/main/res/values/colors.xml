@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#13a0b2</color>
+    <color name="colorPrimaryDark">#545454</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="Button">#efc6dfdc</color>
+
+    <color name="background_color">#ffff00</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="white_greyish">#EEEEEE</color>
+    <color name="button_selectorcolor">#9E9E9E</color>
+
+    <color name="starColor">@android:color/holo_orange_light</color>
+    <color name="noteDescriptionTextColor">@android:color/holo_orange_dark</color>
+    <color name="titleTextColor">#FFFFFF</color>
+    <color name="descriptionTextColor">#A6FFFFFF</color>
+    <color name="commentTextColor">#FFFFFF</color>
+    <color name="hintTextColor">#55000000</color>
+</resources>

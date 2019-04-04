@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+
+    android:background="#13a0b2"
+    tools:context="com.naveen_project.hpgas.GasId">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Id:"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
+
+
+                <TextView
+                    android:id="@+id/tvShowCusId"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:text="12345"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Supplier Id:"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
+
+
+                <TextView
+                    android:id="@+id/tvShowSupId"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:text="12345"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnGasId"
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/buttondesign"
+            android:onClick="ScanGas"
+            android:text="Scan Cylinder Id"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+
+        <TextView
+            android:id="@+id/tvGasId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Cylinder Id"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2sp"
+            android:background="@color/white_greyish" />
+
+        <LinearLayout
+            android:id="@+id/forVisble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/etNewSr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter New SR Number"
+                android:singleLine="true"
+                android:textColor="@android:color/background_dark"
+                android:textColorHint="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/etOldSr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Old SR Number"
+                android:singleLine="true"
+                android:textColor="@android:color/background_dark"
+                android:textColorHint="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="220dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/buttondesign"
+                android:onClick="onSubmitGasID"
+                android:text="Next"
+                android:textColor="@color/background_color"
+                android:textSize="24sp"
+                android:textStyle="bold|italic" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2sp"
+                android:background="@color/white_greyish" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
